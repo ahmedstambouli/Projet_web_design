@@ -1,0 +1,373 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav
+{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 7vh;
+}
+label{
+    margin-top: 1%;
+}
+.logo{
+    color: rgb(0, 200, 255);;
+    font-size: 30px;
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-top: 1%;
+    width: 39%;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin: 0 1%;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+
+a.active,a:hover{
+color: rgb(0, 200, 255);;
+} 
+
+.checkbtn{
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:1024px){
+    .logo{
+        font-size: 35px;
+        padding-left: 2%;
+    }
+    nav ul {
+        width: 50%;
+    }
+    nav ul li a {
+        font-size: 12px;
+
+    }
+
+
+  
+}
+@media (max-width:426px){
+
+   .checkbtn{
+    display: block;
+   } 
+   nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+   }  
+   
+   nav ul li{
+    display: block;
+    margin: 4%;
+    line-height: 30px;
+   }
+   nav ul li a {
+    font-size: 20px;
+   }
+
+   a.active,a:hover{
+    color: black;
+    } 
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    
+
+}
+
+
+.section1{
+    background: url("../img/carousel-1.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 50px);
+} */
+
+.navbar {
+    top: 0;
+    transition: 0.4s;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.d-block {
+    filter: grayscale(50%);
+
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+}
+
+.navbar-brand {
+    margin-left: 2%;
+    color: #06BACA;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #06BACA;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+#join {
+    background-color: #06BACA;
+    color: white;
+}
+
+#join:hover {
+    color: white;
+}
+
+#p1 {
+    color: #06BACA;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+#p2 {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+#b1 {
+    padding: 3% 6% 3% 6%;
+    background-color: #06BACA;
+    border-color: #06BACA;
+}
+
+#b2 {
+    padding: 3% 6% 3% 6%;
+    background-color: white;
+}
+
+
+.carousel-control-next {
+    border: 1px solid white;
+    height: 6%;
+    width: 3%;
+    top: 40%;
+}
+
+
+
+.carousel-control-prev {
+    border: 1px solid white;
+
+    height: 6%;
+    width: 3%;
+    top: 40%;
+}
+
+#row1 {
+    padding: 0% 4% 0% 4%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+
+.p-3:hover {
+    color: white;
+}
+
+.col1:hover {
+    margin-left: 1%;
+    background-color: #06BACA;
+    border-radius: 20px;
+}
+
+.p-3 {
+    line-height: 40px;
+    color: black;
+    margin-left: 1%;
+
+}
+
+.col1 {
+    margin-left: 1%;
+    background-color: aliceblue;
+}
+
+.imageabout {
+    height: 70%;
+    width: 100%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+#sctionabout {
+    padding-left: 7%;
+    padding-right: 6%;
+    margin-top: 8%;
+}
+
+#sctionabout p {
+    line-height: 4vh;
+}
+
+h4 {
+    color: #06BACA;
+}
+
+#sctionabout .bi-arrow-right {
+    color: #06BACA;
+}
+
+#sectioncat{
+    width: 99%;
+}
+
+#sectioncat .images {
+    margin-left: 0%;
+}
+
+#sectioncat .image34 {
+    width: 50%;
+    margin-top: 1%;
+}
+
+#sectioncat .image4{
+    /* width: 100%;
+    height: 100%; */
+    /* background: url("../img/cat-4.jpg") no-repeat; */
+}
+
+
+
+/******************* media scrine ************************/
+@media (max-width:426px) {
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: white;
+    }
+
+    #p1 {
+        color: #06BACA;
+        font-size: small;
+        font-weight: bold;
+
+    }
+
+    #p2 {
+        color: white;
+        font-size: small;
+        font-weight: bold;
+        font-size: 15px;
+
+    }
+
+
+    #b1 {
+        padding: 2% 4% 2% 4%;
+        background-color: #06BACA;
+        border-color: #06BACA;
+        font-size: 10px;
+    }
+
+    #b2 {
+        padding: 2% 4% 2% 4%;
+        background-color: white;
+        font-size: 10px;
+    }
+
+    .carousel-control-next {
+        border: 1px solid white;
+        height: 15%;
+        width: 7%;
+        top: 40%;
+    }
+
+
+
+    .carousel-control-prev {
+        border: 1px solid white;
+        height: 15%;
+        width: 7%;
+        top: 40%;
+
+    }
+
+    .col {
+        flex: none;
+        margin-bottom: 2%;
+
+    }
+
+
+}
+
+
+
+@media(max-width:1025px)
+{
+    #sectioncat .image34{
+        width: 80%;
+    }
+}
